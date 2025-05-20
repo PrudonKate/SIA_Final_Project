@@ -109,7 +109,12 @@ body::before {
 }
 
 .nav-links a:hover {
-    color: var(--disney-blue);
+    color: var(--stitch-red);
+}
+
+.nav-links a:active,
+.nav-links a.active {
+    color: var(--stitch-red);
 }
 
 /* Hero Section */
@@ -556,6 +561,13 @@ footer {
 
 .show-content {
     padding: 2rem;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.show-content:hover {
+    color: inherit;
 }
 
 .show-content h3 {
@@ -707,4 +719,12 @@ footer {
     .category-grid {
         grid-template-columns: 1fr;
     }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px; /* Adjust this value based on your header height */
 }
