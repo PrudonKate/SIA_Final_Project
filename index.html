@@ -3,83 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disney Magic Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Lilo & Stitch</title>
+    <link rel="icon" type="image/png" href="images/Stitch.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-100">
-    <header class="bg-blue-600 text-white p-6">
-        <nav class="container mx-auto">
-            <h1 class="text-4xl font-bold">Disney Magic Blog</h1>
-            <div class="mt-4">
-                <a href="#" class="mr-4 hover:text-blue-200">Home</a>
-                <a href="#" class="mr-4 hover:text-blue-200">Movies</a>
-                <a href="#" class="mr-4 hover:text-blue-200">Parks</a>
-                <a href="#" class="mr-4 hover:text-blue-200">Characters</a>
-                <a href="#" class="hover:text-blue-200">News</a>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="images/Stitch.png" alt="stitch-logo">
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="#facts">Facts</a></li>
+                    <li><a href="#character">Characters</a></li>
+                    <li><a href="#shows">Shows</a></li>
+                </ul>
             </div>
         </nav>
     </header>
 
-    <main class="container mx-auto mt-8 px-4">
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Featured Post -->
-            <article class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="https://source.unsplash.com/random/800x600/?disney" alt="Disney Castle" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h2 class="text-2xl font-bold mb-2">The Magic of Disney Parks</h2>
-                    <p class="text-gray-600 mb-4">Experience the enchantment of Disney parks around the world, from the iconic Cinderella Castle to the thrilling attractions that make dreams come true.</p>
-                    <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
+    <main>
+        <section class="hero">
+            <div class="hero-video-container">
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="videos/hero-background.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Welcome to Lilo & Stitch</h1>
+                <p>It came from outer space!</p>
+                <div class="hero-buttons">
+                    <a href="https://www.youtube.com/watch?v=VWqJifMMgZE" target="_blank" class="primary-btn">View Trailer</a>
                 </div>
-            </article>
-
-            <!-- Second Post -->
-            <article class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="https://source.unsplash.com/random/800x600/?disney-movie" alt="Disney Movie" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h2 class="text-2xl font-bold mb-2">Classic Disney Animation</h2>
-                    <p class="text-gray-600 mb-4">From Snow White to Frozen, explore the evolution of Disney's animated masterpieces that have captured hearts for generations.</p>
-                    <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
-                </div>
-            </article>
-
-            <!-- Third Post -->
-            <article class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="https://source.unsplash.com/random/800x600/?disney-character" alt="Disney Character" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h2 class="text-2xl font-bold mb-2">Beloved Disney Characters</h2>
-                    <p class="text-gray-600 mb-4">Meet the iconic characters that have become part of our lives, from Mickey Mouse to Elsa, and discover their stories.</p>
-                    <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
-                </div>
-            </article>
+            </div>
         </section>
-    </main>
 
-    <footer class="bg-gray-800 text-white mt-12 py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">About Us</h3>
-                    <p class="text-gray-400">Your source for all things Disney, bringing the magic to life through stories, news, and insights.</p>
+        <section class="featured">
+            <h2>Fun Facts</h2>
+            <div class="content-slider">
+                <div class="content-card">
+                    <div class="fact-content">
+                        <h3>Creation of Stitch</h3>
+                        <p>Stitch, also known as Experiment 626, was created by Dr. Jumba Jookiba, a brilliant but misguided scientist. He was designed to be a perfect criminal with enhanced strength, intelligence, and destructive capabilities.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="text-gray-400">
-                        <li><a href="#" class="hover:text-white">Home</a></li>
-                        <li><a href="#" class="hover:text-white">About</a></li>
-                        <li><a href="#" class="hover:text-white">Contact</a></li>
-                    </ul>
+                <div class="content-card">
+                    <div class="fact-content">
+                        <h3>Genetic Design</h3>
+                        <p>Stitch was genetically engineered with DNA from various species, giving him unique abilities like super strength, enhanced hearing, night vision, and the ability to retract his extra arms and antennae.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
-                        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
-                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                <div class="content-card">
+                    <div class="fact-content">
+                        <h3>Transformation</h3>
+                        <p>Despite being created for destruction, Stitch's encounter with Lilo and her family changed him. He learned about 'ohana' (family) and discovered that his true purpose was to find a family and protect them.</p>
                     </div>
                 </div>
             </div>
+            <div class="facts-button">
+                <a href="#" class="more-btn">More</a>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Characters</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="character-image">
+                        <img src="images/stitch_1.jpg" alt="stitch_1">
+                    </div>
+                    <h3>Stitch</h3>
+                    <p>Experiment 626</p>
+                </div>
+                <div class="category-card">
+                    <div class="character-image">
+                        <img src="images/lilo.png" alt="Lilo">
+                    </div>
+                    <h3>Lilo</h3>
+                    <p>Stitch's Best Friend</p>
+                </div>
+                <div class="category-card">
+                    <div class="character-image">
+                        <img src="images/jumba.jpg" alt="Jumba">
+                    </div>
+                    <h3>Jumba</h3>
+                    <p>Stitch's Creator</p>
+                </div>
+                <div class="category-card">
+                    <div class="character-image">
+                        <img src="images/pleakley.jpg" alt="Pleakley">
+                    </div>
+                    <h3>Pleakley</h3>
+                    <p>Galactic Federation Agent</p>
+                </div>
+                <div class="category-card">
+                    <div class="character-image">
+                        <img src="images/nani.jpg" alt="Nani">
+                    </div>
+                    <h3>Nani</h3>
+                    <p>Lilo's Sister</p>
+                </div>
+                <div class="category-card">
+                    <div class="character-image">
+                        <img src="images/gantu.jpg" alt="Captain Gantu">
+                    </div>
+                    <h3>Captain Gantu</h3>
+                    <p>Galactic Federation Captain</p>
+                </div>
+            </div>
+            <div class="facts-button">
+                <a href="#" class="more-btn">More</a>
+            </div>
+        </section>
+
+        <section class="shows">
+            <h2>Shows & Movies</h2>
+            <div class="shows-grid">
+                <div class="show-card">
+                    <div class="show-content">
+                        <h3>Lilo & Stitch</h3>
+                        <p>The original movie that started it all</p>
+                        <span class="year">2002</span>
+                    </div>
+                </div>
+                <div class="show-card">
+                    <div class="show-content">
+                        <h3>Stitch! The Movie</h3>
+                        <p>Stitch's first direct-to-video adventure</p>
+                        <span class="year">2003</span>
+                    </div>
+                </div>
+                <div class="show-card">
+                    <div class="show-content">
+                        <h3>Lilo & Stitch: The Series</h3>
+                        <p>TV series following Stitch's adventures</p>
+                        <span class="year">2003-2006</span>
+                    </div>
+                </div>
+                <div class="show-card">
+                    <div class="show-content">
+                        <h3>Leroy & Stitch</h3>
+                        <p>The final chapter of the original series</p>
+                        <span class="year">2006</span>
+                    </div>
+                </div>
+                <div class="show-card">
+                    <div class="show-content">
+                        <h3>Lilo & Stitch (Live-Action)</h3>
+                        <p>Upcoming live-action remake of the beloved classic</p>
+                        <span class="year upcoming">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Disney. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
-</html> 
+</html>
